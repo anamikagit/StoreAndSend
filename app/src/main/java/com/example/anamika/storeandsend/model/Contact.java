@@ -1,4 +1,4 @@
-package com.example.anamika.storeandsend;
+package com.example.anamika.storeandsend.model;
 
 public class Contact {
 

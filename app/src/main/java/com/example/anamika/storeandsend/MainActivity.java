@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.example.anamika.storeandsend.model.Contact;
 import com.facebook.stetho.Stetho;
 
 import java.util.List;
