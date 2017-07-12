@@ -1,10 +1,12 @@
 package com.example.anamika.storeandsend;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
 import com.example.anamika.storeandsend.model.Contact;
+import com.example.anamika.storeandsend.service.FusedService;
 import com.facebook.stetho.Stetho;
 
 import java.util.List;
@@ -16,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Stetho.initializeWithDefaults(this);
+
+        Intent i=new Intent(MainActivity.this,FusedService.class);
+        startService(i);
 
         DatabaseHandler db = new DatabaseHandler(this);
 
